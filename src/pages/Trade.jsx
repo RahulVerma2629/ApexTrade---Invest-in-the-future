@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import { useUser } from "@clerk/clerk-react";
+import Footer from "../components/Footer";
 
 const API_KEY = "d7chsn9r01qv03esdou0d7chsn9r01qv03esdoug";
 
@@ -34,6 +36,9 @@ export default function Trade() {
   const [stocks, setStocks] = useState([]);
   const [qty, setQty] = useState({});
   const [message, setMessage] = useState("");
+
+  const { user } = useUser();
+  const email = user?.primaryEmailAddress?.emailAddress;
 
   const fetchPrices = async () => {
     const updated = await Promise.all(
@@ -76,9 +81,14 @@ export default function Trade() {
   }, []);
 
   const saveTrade = (trade) => {
-    const existing = JSON.parse(localStorage.getItem("trades")) || [];
+    if (!email) return;
+
+    const key = `trades_${email}`;
+    const existing = JSON.parse(localStorage.getItem(key)) || [];
+
     existing.push(trade);
-    localStorage.setItem("trades", JSON.stringify(existing));
+
+    localStorage.setItem(key, JSON.stringify(existing));
   };
 
   const handleBuy = (stock) => {
@@ -114,6 +124,7 @@ export default function Trade() {
   };
 
   return (
+    <>
     <div className="trade-container">
       <h1>Trade Stocks</h1>
       <p>Real-time stock analysis based on your budget, sector and risk profile</p>
@@ -164,5 +175,7 @@ export default function Trade() {
         ))}
       </div>
     </div>
+    <Footer />
+  </>
   );
 }
