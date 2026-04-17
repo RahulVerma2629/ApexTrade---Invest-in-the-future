@@ -7,6 +7,11 @@ img{
     opacity: 0;
   }
 }
+@media (max-width: 540px) {
+  .auth-card{
+    width: 300px;
+  }
+}
 .auth-wrapper {
   display: flex;
   justify-content: center;
