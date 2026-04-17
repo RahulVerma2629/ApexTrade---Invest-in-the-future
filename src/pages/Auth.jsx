@@ -33,15 +33,15 @@ export default function Auth() {
           <div className="clerk">
             {isSignUp ? (
               <SignUp
-                path="/auth/sign-up"
+                path="/auth/signup"
                 routing="path"
-                signInUrl="/auth/sign-in"
+                signInUrl="/auth/signin"
               />
             ) : (
               <SignIn
-                path="/auth/sign-in"
+                path="/auth/signin"
                 routing="path"
-                signUpUrl="/auth/sign-up"
+                signUpUrl="/auth/signup"
               />
             )}
           </div>
