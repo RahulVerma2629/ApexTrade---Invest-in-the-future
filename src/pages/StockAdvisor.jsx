@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Footer from "../components/Footer";
 
 const API_KEY = "d7chsn9r01qv03esdou0d7chsn9r01qv03esdoug";
 
@@ -119,6 +120,7 @@ export default function StockAdvisor() {
   const sectors = ["All", ...new Set(STOCKS.map((s) => s.sector))];
 
   return (
+    <>
     <div className="advisor-container">
       <div className="advisor-header">
         <h1>Smart Stock Advisor</h1>
@@ -212,5 +214,7 @@ export default function StockAdvisor() {
         </div>
       )}
     </div>
+    <Footer />
+  </>
   );
 }
