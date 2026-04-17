@@ -83,14 +83,9 @@ export default function Trade() {
   }, []);
 
   const saveTrade = (trade) => {
-    if (!email) return;
-
-    const key = `trades_${email}`;
-    const existing = JSON.parse(localStorage.getItem(key)) || [];
-
+    const existing = JSON.parse(localStorage.getItem("trades")) || [];
     existing.push(trade);
-
-    localStorage.setItem(key, JSON.stringify(existing));
+    localStorage.setItem("trades", JSON.stringify(existing));
   };
 
   const handleBuy = (stock) => {
