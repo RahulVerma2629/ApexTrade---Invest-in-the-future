@@ -41,6 +41,16 @@ nav a.active {
   color: #22c55e;
 }
 
+@media(min-width:540px){
+  nav{
+    gap: 6px;
+  }
+  nav a{
+    font-size: 10px;
+  }
+}
+  
+
 .home-container {
   max-width: 1180px;
   margin: 50px auto 70px;
