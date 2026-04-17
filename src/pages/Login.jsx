@@ -5,7 +5,7 @@ export default function Login() {
   return  (
     <div className="Login-auth-container">
       <div className="clerk-wrapper">
-        <SignIn />
+        <SignIn path="login"/>
       </div>
     </div>
   );
