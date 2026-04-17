@@ -7,11 +7,7 @@ img{
     opacity: 0;
   }
 }
-@media (max-width: 540px) {
-  .clerk{
-    height:300px;
-  }
-}
+
 .auth-wrapper {
   display: flex;
   justify-content: center;
