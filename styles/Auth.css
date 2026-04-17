@@ -9,6 +9,7 @@ img{
 }
 @media (max-width: 540px) {
   .auth-card{
+    height:400px;
     width: 300px;
   }
 }
