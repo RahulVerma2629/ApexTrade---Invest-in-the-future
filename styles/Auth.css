@@ -1,0 +1,55 @@
+img{
+  height: 45px;
+  margin: 25px;
+}
+@media (max-width: 1000px) {
+  .Logo-ApexTrade{
+    opacity: 0;
+  }
+}
+.auth-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.auth-card {
+  background-color: #1e293b;
+  margin-top: -60px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 25px;
+  padding-top: 25px;
+  width: 450px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+.auth-card .clerk {
+  display: flex;
+  justify-content: center;
+}
+
+.guest-btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  border-radius: 8px;
+  background-color: #38bdf8;
+  color: #020617;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.guest-btn:hover {
+  background-color: #0ea5e9;
+}
+
+.guest-divider {
+  margin: 20px 0;
+  color: #94a3b8;
+  font-weight: bold;
+}
