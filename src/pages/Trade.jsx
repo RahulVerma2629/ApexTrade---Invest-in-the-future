@@ -37,8 +37,10 @@ export default function Trade() {
   const [qty, setQty] = useState({});
   const [message, setMessage] = useState("");
 
-  const { user } = useUser();
-  const email = user?.primaryEmailAddress?.emailAddress;
+  const { user, isLoaded } = useUser();
+  const email = isLoaded
+    ? user?.primaryEmailAddress?.emailAddress
+    : null;
 
   const fetchPrices = async () => {
     const updated = await Promise.all(
