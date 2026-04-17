@@ -41,7 +41,7 @@ nav a.active {
   color: #22c55e;
 }
 
-@media(min-width:540px){
+@media(max-width:540px){
   nav{
     gap: 6px;
   }
