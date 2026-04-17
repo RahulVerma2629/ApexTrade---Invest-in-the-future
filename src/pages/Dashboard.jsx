@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useMemo, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useUser } from "@clerk/clerk-react";
 import Footer from "../components/Footer";
@@ -8,10 +8,17 @@ export default function Dashboard() {
   const email = user?.primaryEmailAddress?.emailAddress;
   const [activeTab, setActiveTab] = useState("holdings");
 
-  const trades = useMemo(() => {
-      if (!email) return [];
-      return JSON.parse(localStorage.getItem(`trades_${email}`)) || [];
-    }, [email]);
+  const [trades, setTrades] = useState([]);
+  useEffect(() => {
+    if (!email) return;
+  
+    const saved =
+      JSON.parse(localStorage.getItem(`trades_${email}`)) || [];
+  
+    setTrades(saved);
+  }, [email]);
+
+  
   const startingCash = 100000;
 
   const stats = useMemo(() => {
