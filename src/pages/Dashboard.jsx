@@ -8,11 +8,7 @@ export default function Dashboard() {
   const email = user?.primaryEmailAddress?.emailAddress;
   const [activeTab, setActiveTab] = useState("holdings");
 
-  const trades =
-  email
-    ? JSON.parse(localStorage.getItem(`trades_${email}`)) || []
-    : [];
-
+  const trades = JSON.parse(localStorage.getItem("trades")) || [];
   
   const startingCash = 100000;
 
