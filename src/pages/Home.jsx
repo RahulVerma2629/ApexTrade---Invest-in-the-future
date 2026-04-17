@@ -1,9 +1,11 @@
 import { useNavigate } from "react-router-dom";
+import Footer from "../components/Footer";
 
 export default function Home() {
   const navigate = useNavigate();
 
   return (
+    <>
     <div className="home-container">
 
       <section className="home-hero">
@@ -80,5 +82,7 @@ export default function Home() {
       </section>
 
     </div>
+    <Footer />
+  </>
   );
 }
