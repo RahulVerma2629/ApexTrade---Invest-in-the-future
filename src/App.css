@@ -43,10 +43,12 @@ nav a.active {
 
 @media(max-width:540px){
   nav{
-    gap: 6px;
+    gap: 5px;
+    margin: 15px 3px;
   }
   nav a{
     font-size: 10px;
+    padding: 4px 11px;
   }
 }
   
