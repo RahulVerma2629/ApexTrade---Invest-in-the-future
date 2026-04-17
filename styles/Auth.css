@@ -8,12 +8,8 @@ img{
   }
 }
 @media (max-width: 540px) {
-  .auth-card{
-    height:400px;
-    width: 300px;
-  }
-  .guest-btn:hover {
-    background-color: red;
+  .auth-card .clerk{
+    height:300px;
   }
 }
 .auth-wrapper {
