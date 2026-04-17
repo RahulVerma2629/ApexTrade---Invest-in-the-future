@@ -12,6 +12,9 @@ img{
     height:400px;
     width: 300px;
   }
+  .guest-btn:hover {
+    background-color: red;
+  }
 }
 .auth-wrapper {
   display: flex;
