@@ -26,7 +26,7 @@ export default function Auth() {
 
   return (
     <div>
-      <img className="Logo-ApexTrade" src="/public/ApexTrade.png" alt="Logo" />
+      <img className="Logo-ApexTrade" src="/ApexTrade.png" alt="Logo" />
       <div className="auth-wrapper">
         <div className="auth-card">
 
