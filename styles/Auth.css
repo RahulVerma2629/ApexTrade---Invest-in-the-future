@@ -39,14 +39,14 @@ img{
   padding: 12px;
   margin-top: 20px;
   border-radius: 8px;
-  background-color: #38bdf8;
+  background-color: #f8f538;
   color: #020617;
   font-weight: bold;
   transition: 0.2s;
 }
 
 .guest-btn:hover {
-  background-color: #0ea5e9;
+  background-color: #edcc37;
 }
 
 .guest-divider {
