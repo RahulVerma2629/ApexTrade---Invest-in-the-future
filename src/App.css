@@ -854,7 +854,7 @@ nav a.active {
 }
 
 .stat-card {
-  background: #111827;
+  background: #3434345f;
   border: 1px solid rgba(255,255,255,0.06);
   border-radius: 18px;
   padding: 20px;
@@ -904,7 +904,7 @@ nav a.active {
 }
 
 .dashboard-left {
-  background: #111827;
+  background: #3434345f;
   border: 1px solid rgba(255,255,255,0.06);
   border-radius: 26px;
   overflow: hidden;
@@ -996,7 +996,7 @@ nav a.active {
 
 .holding-row,
 .activity-row {
-  background: #0f172a;
+  background: #3434345f;
   border: 1px solid rgba(255,255,255,0.05);
   border-radius: 14px;
   padding: 15px 16px;
@@ -1078,7 +1078,7 @@ nav a.active {
 }
 
 .side-card {
-  background: #111827;
+  background: #3434345f;
   border: 1px solid rgba(255,255,255,0.06);
   border-radius: 22px;
   padding: 22px;
@@ -1120,7 +1120,7 @@ nav a.active {
 }
 
 .side-action.dark {
-  background: #111827;
+  background: #3434345f;
   border: 1px solid rgba(255,255,255,0.06);
   color: white;
 }
