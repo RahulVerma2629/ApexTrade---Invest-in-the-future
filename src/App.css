@@ -395,7 +395,7 @@ nav a.active {
 
 .trade-card {
   position: relative;
-  background: rgba(15, 23, 42, 0.75);
+  background: #3434345f;
   border: 1px solid rgba(148, 163, 184, 0.12);
   border-radius: 22px;
   padding: 22px;
@@ -607,7 +607,7 @@ nav a.active {
   height: 48px;
   padding: 0 14px;
 
-  background: #0f172a;
+  background: #3434345f;
   border: 1px solid rgba(255,255,255,0.08);
   border-radius: 14px;
 
@@ -621,7 +621,7 @@ nav a.active {
   height: 48px;
   padding: 0 42px 0 14px;
 
-  background-color: #0f172a;
+  background: #3434345f;
   border: 1px solid rgba(255,255,255,0.08);
   border-radius: 14px;
 
@@ -686,7 +686,7 @@ nav a.active {
 
 /* Stock Card */
 .stock-card {
-  background: #0f172a;
+  background: #3434345f;
   border: 1px solid rgba(255, 255, 255, 0.06);
   border-radius: 22px;
   padding: 22px;
