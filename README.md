@@ -152,8 +152,5 @@ Software Developer • Full-Stack Enthusiast • Problem Solver
 
 ---
 
-### ❤️ Built with passion, curiosity, and continuous learning.
+## Built with ❤️ with continuous learning.
 
-## 🚀 APEXTRADE – Invest in the Future
-
-*Learn. Analyze. Invest Smarter.*
